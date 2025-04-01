@@ -1,1 +1,1 @@
-cout<<p;
+for(int k = 0; k < num; k++){

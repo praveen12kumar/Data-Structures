@@ -8,11 +8,10 @@ int main() {
     for(int i = 1; i <= n; i++) {
         int space = n - i;
         for(int j = 0; j < space; j++) {
-            cout << " ";
+            cout << '*';
         }
-        int num = 2 * i - 1;
         int p = i;
-        for(int k = 0; k < num; k++){
+        for(int k = 0; k < (2 * i - 1); k++){
             cout<<p;
             if(p <= 2 * i - 1){
                 p++;
