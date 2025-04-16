@@ -25,9 +25,11 @@ void removeConsecutiveDuplicates(char input[])
     for(int i = 1; input[i] != '\0'; i++){
         if(input[i] != lastChar){
             input[x++] = lastChar;
+            lastChar = input[i];
         }
     }
-    input[x] = '\0';
+    input[x] = lastChar;
+    input[x+1] = '\0';
 }
 
 int main() {
