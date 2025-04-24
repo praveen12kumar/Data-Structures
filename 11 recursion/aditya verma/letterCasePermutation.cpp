@@ -20,7 +20,7 @@ Output: ["3z4","3Z4"]
 #include<bits/stdc++.h>
 using namespace std;
 
-void solve(string input, string output, vector<string>ans){
+void solve(string input, string output, vector<string>&ans){
     if(input.size() == 0){
         ans.push_back(output);
         return;
